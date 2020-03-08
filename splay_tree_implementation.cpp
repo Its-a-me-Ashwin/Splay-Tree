@@ -1,4 +1,4 @@
-#include "../include/splay_tree.hpp"
+#include "splay_tree.hpp"
 
 using namespace std;
 
