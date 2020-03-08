@@ -5,3 +5,9 @@ Splay Tree Implementation in C++
 
 Splay trees have time complexity of O(logN) in most cases but can have O(N) in some cases. Unlike AVL/Red-Black trees Splay Trees do not have a strictly self-balancing feature. Balancing is achieved using rotations. Splay trees are faster as they are not strictly          balanced. 
 
+
+
+## To Use
+* inched the header file
+* create a splay tree object
+* use the methods to use the splay tree
