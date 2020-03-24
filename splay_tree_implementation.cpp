@@ -11,27 +11,27 @@ struct node
 class splay_tree_implementation : public splay_tree
 {
 private:
-	int number_of_nodes;
-	node* root;
+	int number_of_nodes; // keep track of number of nodes
+	node* root; // current root of the tree
 
 public:
-	splay_tree_implementation();
-	node* getNewNode(int);
-	node* rotateLeft(node*);
-	node* rotateRight(node*);
-	node* splay(node*,int);
-	int find(int);
-	void insert(int);
-	void remove(int);
-	node* delete_parent(node*,int);
-	node* delete_root(node*);
-	vector<int> post_order();
-	vector<int> pre_order();
-	vector<int> in_order();
-	void post(node*,vector<int>&);
-	void pre(node*,vector<int>&);
-	void in(node*,vector<int>&);
-	int get_num_nodes();
+	splay_tree_implementation(); // constructor
+	node* getNewNode(int); // creates new node
+	node* rotateLeft(node*); // helper function
+	node* rotateRight(node*); // helper function
+	node* splay(node*,int); // // helper function (brings given node to root)
+	int find(int); // find the node with the given value
+	void insert(int); // insert a node into the tree
+	void remove(int); // removes the node 
+	node* delete_parent(node*,int); // helper function
+	node* delete_root(node*); // helper function
+	vector<int> post_order(); // print the tree
+	vector<int> pre_order(); // print the tree
+	vector<int> in_order(); // print the tree
+	void post(node*,vector<int>&); // helper function
+	void pre(node*,vector<int>&); // helper function
+	void in(node*,vector<int>&); // helper function
+	int get_num_nodes(); // returns the number of nodes
 	~splay_tree_implementation();
 };
 
@@ -380,7 +380,11 @@ splay_tree_implementation::~splay_tree_implementation()
 }
 
 
+/////////////// TESTING CODE /////////////////
+///// UNCOMMENT THE CODE FOR TEST ////////////
 
+
+/*
 int main ()
 {
 	splay_tree_implementation a;
@@ -508,3 +512,4 @@ int main ()
 	a.post_order();
 
 }
+*/
