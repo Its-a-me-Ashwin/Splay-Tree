@@ -8,6 +8,6 @@ Splay trees have time complexity of O(logN) in most cases but can have O(N) in s
 
 
 ## To Use
-* inched the header file
+* include the header file
 * create a splay tree object
 * use the methods to use the splay tree
